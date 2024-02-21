@@ -40,20 +40,20 @@ export default function Form() {
           name="name"
           // value={formData.name}
           // onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
       </div>
 
       <div className="mb-2">
-        <label htmlFor="number" className="block text-gray-700 text-sm font-bold mb-2">Number:</label>
+        <label htmlFor="number" className="block text-gray-700 text-sm font-bold mb-2 ">Number:</label>
         <input
           type="tel"
           id="number"
           name="number"
           // value={formData.number}
           // onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
       </div>
@@ -66,7 +66,7 @@ export default function Form() {
           name="email"
           // value={formData.email}
           // onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
       </div>
@@ -79,7 +79,7 @@ export default function Form() {
           name="location"
           // value={formData.location}
           // onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50" 
           required
         />
       </div>
@@ -92,7 +92,7 @@ export default function Form() {
           name="owner"
           // value={formData.owner}
           // onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
       </div>
@@ -105,7 +105,7 @@ export default function Form() {
           name="color"
           // value={formData.color}
           // onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
       </div>
@@ -118,7 +118,7 @@ export default function Form() {
           name="registration"
           // value={formData.registration}
           // onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
       </div>
@@ -145,7 +145,7 @@ export default function Form() {
           name="insurance"
           // value={formData.insurance}
           // onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
       </div>
@@ -158,7 +158,7 @@ export default function Form() {
           name="carNumber"
           // value={formData.carNumber}
           // onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
       </div><div className="mb-2">
@@ -168,7 +168,7 @@ export default function Form() {
           id="rcImage"
           name="rcImage"
           // onChange={handleFileChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           accept="image/*" // Restrict to image files
         />
       </div>
@@ -180,7 +180,7 @@ export default function Form() {
           id="insuranceImage"
           name="insuranceImage"
           // onChange={handleFileChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           accept="image/*" // Restrict to image files
         />
       </div>

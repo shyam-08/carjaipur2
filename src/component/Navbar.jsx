@@ -2,8 +2,9 @@
 
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import SearchBox from './SearchBox';
 // import SearchBox from './SearchBox'
-
+<Link to='/search'></Link>
 const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
@@ -15,14 +16,15 @@ const Navbar = () => {
     <nav className="flex flex-wrap items-center justify-between bg-white p-3 font-bold ">
       <div>
         {/* <Link href="/"> */}
-          <a href='/'>
-        The Car Jaipur
+          <Link to='/'>
+            {/* <img src="/Logo.jpg" alt="Brand image" className='w-10 h-10 inline-block bg-white m-1' /> */}
+        CarJaipur
 
-          </a>
+          </Link>
          {/* </Link>  */}
       </div>
-{/* <SearchBox/> */}
-      <button   onClick={toggleMenu} className="lg:hidden">
+      <SearchBox/>
+      <button   onClick={toggleMenu} className="lg:hidden bg-gray-50">
         Menu
       </button>
 
@@ -38,12 +40,12 @@ const Navbar = () => {
             <Link to="/sell">Sell Car</Link>
           </li>
           <li>
-            <a href="tel:8742068501">SellCar:874206801</a>
+            <a href="tel:9828066706">SellCar:9828066706</a>
            
           </li>
           <li>
         
-              <a href="tel:76237908435">Buy Car:768604392</a>
+              <a href="tel:8742068501">Buy Car:8742068501</a>
            
           </li>
         </ul>

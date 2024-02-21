@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 // import Navbar from './Navbar'
 // import Footer from './Footer'
 import '/src/assets/style.css'
-
+import {Helmet} from "react-helmet";
 import 'bootstrap/dist/css/bootstrap.min.css'
 // import Footer from './Footer';
 import { TextField } from '@mui/material';
@@ -11,7 +11,6 @@ import { Button } from '@mui/material';
 import { Checkbox } from '@mui/material';
 import { InputLabel } from '@mui/material';
 import { Select } from '@mui/material';
-
 import { FormControl } from '@mui/material';
 // import InputFileUpload from './InputFileUpload';
 // import InputFileUpload2 from './InputFileUpload2';
@@ -34,6 +33,22 @@ export default class SellCar extends Component {
   render() {
     return (
       <div>
+         <Helmet>
+                <meta charSet="utf-8" />
+                <title>Sell Car</title>
+                <meta name="description" content=" Getting a great deal on your vehicle at Car Jaipur we’ll value your vehicle based on its condition and current market value"/>
+                <link rel="canonical" href="https://carjaipur/sell" />
+                <link rel="sitemap" type="application/xml" title="SellCar" href="/sell" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-V5T73DSZCM"></script>
+                <script>
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'G-V5T73DSZCM');
+                    `}
+                </script>
+            </Helmet>
         <Navbar/>
         <div className="Section-1SaleCar   " >
           <div className="container-fluid">
@@ -95,12 +110,12 @@ export default class SellCar extends Component {
 
                   </li>
                 </ul>
-                <a href='https://wa.me/8742068501'> <Button variant="outlined" color="success" startIcon={<WhatsAppIcon />} sx={{ m: 1 }}>
+                <a href='https://wa.me/919828066706'> <Button variant="outlined" color="success" startIcon={<WhatsAppIcon />} sx={{ m: 1 }}>
                   Chat on Whatsapp
                 </Button></a>
                 {/* <button style={{ margin: "5px" }}> </button> */}
-                <a href='tel:8742068501'><Button variant="outlined" color="success" startIcon={<PhoneIcon />} >
-                  Call Now:8742068501
+                <a href='tel:9828066706'><Button variant="outlined" color="success" startIcon={<PhoneIcon />} >
+                  Call Now:9828066706
                 </Button></a>
                 {/* <button>Call Now:8742068501</button> */}
               </div>
@@ -135,16 +150,16 @@ export default class SellCar extends Component {
           <div className="container">
             <div className="row">
               <h2>AUTHORIZED LUXURY CAR BUYERS IN JAIPUR</h2>
-              <h2>THE CAR JAIPUR</h2>
+              <h2>CAR JAIPUR</h2>
               <div className="col-md-6 col-sm-12" style={{
-                padding: "20px"
+                padding: "16px"
               }}>
                 <ul style={{
                   listStyle: "none", textAlign: "left", flexWrap: "wrap"
                 }}>
                   <li >
-
-                    <img src="\img\bodytypeothrinfolisrt-checkicon.png" alt="" className='Sec2-Li-Img  ml-1' />
+                  
+                    <img src="\img\bodytypeothrinfolisrt-checkicon.png" alt="" className='Sec2-Li-Img  ml-1 inline-block' />
 
                     One of the biggest and most trusted brand in the industry</li><hr />
                   <li>
@@ -390,22 +405,23 @@ Physical Evaluation
   <div className="container">
     <h2 style={{ color: "whitesmoke", padding: "10px" }}>HOW TO SELL YOUR USED CARS</h2>
     <p style={{ color: "grey", padding: "10px" }}>
-      At The Car Jaipur, we strive to provide the quickest and most hassle-free car selling service available. Getting a great deal on your vehicle can often be tricky, that’s why at The Car Jaipur we’ll value your vehicle based on its condition and current market value.
+      At Car Jaipur, we strive to provide the quickest and most hassle-free car selling service available. Getting a great deal on your vehicle can often be tricky, that’s why at Car Jaipur we’ll value your vehicle based on its condition and current market value.
     </p>
-    <ul className="row" style={{ listStyle: 'none', padding: 0, justifyContent: 'center' }}>
-      <li className="col-md-4">
-        <img src="\img\sellcar-instantvaluation-img.png" alt="instant valuation" />
-        <h6 style={{ color: "grey", margin: '2px' }}>Valuation</h6>
-      </li>
-      <li className="col-md-4">
-        <img src="\img\sellcar-bookappointment-img.png" alt="appointment" />
-        <h6 style={{ color: "grey", margin: '2px' }}>Book An Appointment</h6>
-      </li>
-      <li className="col-md-4">
-        <img src="\img\sellcar-sllyrcarmeeting-img.png" alt="sell car" />
-        <h6 style={{ color: "grey", margin: '2px' }}>Sell Your Car</h6>
-      </li>
-    </ul>
+    <ul className="flex flex-wrap justify-center p-0 list-none">
+  <li className="flex-none md:flex-1 lg:flex-1 xl:flex-1 p-4">
+    <img src="\img\sellcar-instantvaluation-img.png" alt="instant valuation" />
+    <h6 className="text-gray-500 mt-2">Valuation</h6>
+  </li>
+  <li className="flex-none md:flex-1 lg:flex-1 xl:flex-1 p-4">
+    <img src="\img\sellcar-bookappointment-img.png" alt="appointment" />
+    <h6 className="text-gray-500 mt-2">Book An Appointment</h6>
+  </li>
+  <li className="flex-none md:flex-1 lg:flex-1 xl:flex-1 p-4">
+    <img src="\img\sellcar-sllyrcarmeeting-img.png" alt="sell car" />
+    <h6 className="text-gray-500 mt-2">Sell Your Car</h6>
+  </li>
+</ul>
+
     <hr style={{ color: "grey" }} />
   </div>
 </div>

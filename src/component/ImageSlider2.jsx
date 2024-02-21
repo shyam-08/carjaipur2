@@ -5,7 +5,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const ImageSlider = () => {
+const ImageSlider2 = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
@@ -16,6 +16,8 @@ const ImageSlider = () => {
 
   const images = [
     '/img/banner-img-1.jpg',
+    // "src/assets/img/volvo v90black.jpg",
+    // "src/assets/img/rangerover2.jpg",
     // 'src/assets/img/pexels-pixabay-261985.jpg',
     // '/img/pexels-geometric-photography-13324313.jpg'
   ];
@@ -35,4 +37,4 @@ const ImageSlider = () => {
   );
 };
 
-export default ImageSlider;
+export default ImageSlider2;

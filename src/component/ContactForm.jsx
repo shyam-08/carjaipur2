@@ -21,7 +21,7 @@ export default function ContactForm() {
   // };
 
   return (
-    <form action='mailto:ssshrma08@gmail.com' method='post'
+    <form action='mailto:carjaipursince1998@gmail.com' method='post'
     // onSubmit={handleSubmit}
      className="max-w-md mx-auto bg-white p-8 mt-10 rounded-md shadow-md">
       <div className="mb-4">
@@ -32,7 +32,7 @@ export default function ContactForm() {
           name="name"
           // value={formData.name}
           // onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
       </div>
@@ -45,7 +45,7 @@ export default function ContactForm() {
           name="number"
           // value={formData.number}
           // onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
       </div>
@@ -58,7 +58,7 @@ export default function ContactForm() {
           name="email"
           // value={formData.email}
           // onChange={handleChange}
-          className="w-full p-2 border rounded-md"
+          className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
       </div>

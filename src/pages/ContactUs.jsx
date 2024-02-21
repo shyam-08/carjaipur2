@@ -19,6 +19,8 @@ import { FormControl } from '@mui/material';
 import Navbar from '../component/Navbar';
 import Footer from '../component/Footer';
 import ContactForm from '../component/ContactForm'
+import {Helmet} from "react-helmet";
+
 // import Form from '../component/Form'
 // for animation framer motion 
 // import { motion } from "framer-motion"
@@ -31,15 +33,31 @@ export default class ContactUs extends Component {
         return (
             // <!-- START - Contact Us Section -->
             <div className="lightgray contactus-sec">
+                  <Helmet>
+                <meta charSet="utf-8" />
+                <title>Contact US</title>
+                <meta name="description" content="ContactUs:-9828066706, 8742068501, Email:carjaipursince1998@gmail.com, Address:'27,Suratpura house,T.N Mishra Marg, Nirman Nagar, Jaipur, Rajasthan'"/>
+                <link rel="canonical" href="https://carjaipur/ContactUs" />
+                <link rel="sitemap" type="application/xml" title="ContactUS" href="/ContactUs" />
+                <script async src="https://www.googletagmanager.com/gtag/js?id=G-V5T73DSZCM"></script>
+                <script>
+                    {`
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'G-V5T73DSZCM');
+                    `}
+                </script>
+            </Helmet>
             <div className="section-1" style={{boxSizing:"border-box"}}>
                  <Navbar/>
             </div>
 
             
-                   <div className="section-2" style={{
+                   <div className="section-2 p-8 md:p-16" style={{
                     padding:"90px",background:"whitesmoke",boxSizing:"border-box"
                    }}>
-                <div className="container">
+                <div className="container  mx-auto">
                 
                     <div className="secheader-grp">
                         <h1 className="h4 sectitle">Contact us</h1>
@@ -48,25 +66,25 @@ export default class ContactUs extends Component {
                         <div className="col-md-6 cntnt-clmn">
                             <div className="cntnt-grp">
                                 <ul className="contactusdetail-list">
-                                    <li className="mail">
+                                    <li className="mail m-1">
                                         <div className="li-innr">
                                             <h6 className="h7"><a href="mailto:carjaipursince1998@gmail.com">carjaipursince1998@gmail.com</a></h6>
                                             <p>The best way to get answer faster.</p>
                                         </div>
                                     </li>
-                                    <li className="call">
+                                    <li className="call m-2">
                                         <div className="li-innr">
                                             <h6 className="h7">For Preowned Cars</h6>
-                                            <h6 className="h7"><a href="tel:+91-9829066706">(+91) 9829066706</a></h6>
-                                            <p>We are happy to help (10am to 10pm)</p>
+                                            <h6 className="h7"><a href="tel:+91-9828066706">(+91) 9829066706</a></h6>
+                                            <p>We are happy to help (10am to 7pm)</p>
                                         </div>
                                     </li>
 
-                                    <li className="call">
+                                    <li className="call m-1">
                                         <div className="li-innr">
                                             <h6 className="h7">For Preowned Cars</h6>
-                                            <h6 className="h7"><a href="tel:+91874206801-">(+91) 8742068501</a></h6>
-                                            <p>We are happy to help (10am to 10pm)</p>
+                                            <h6 className="h7"><a href="tel:+919829066706-">(+91) 9829066706</a></h6>
+                                            <p>We are happy to help (10am to 7pm)</p>
                                         </div>
                                     </li>
                                 </ul>
@@ -90,7 +108,7 @@ export default class ContactUs extends Component {
                     </div>
                     </div>
                 </div>
-                <div style={{marginTop:'20px',boxSizing:"border-box"}}>
+                <div className="mt-8 md:mt-16" style={{marginTop:'20px',boxSizing:"border-box"}}>
                     <Footer/>
                   </div>
 

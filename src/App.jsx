@@ -13,9 +13,14 @@ import {BrowserRouter,
  Route
 } from 'react-router-dom';
 import CarDetail from './pages/CarDetail'
-// import SearchBox from './component/SearchBox'
+import SearchBox from './component/SearchBox'
+import Search from './pages/Search'
+// import SitemapComponent from './sitemap-builder'
+// import { SitemapGenerator } from "react-router-sitemap";
+// import routes from './routes'
+// import SearchResult from './component/SearchResult'
 function App() {
-  
+  // const sitemap = generator.generate();
 
   return (
    <>
@@ -26,6 +31,9 @@ function App() {
 {/* <SellCar/> */}
 {/* <CarDetail/> */}
 {/* <SearchBox/> */}
+{/* <SearchResult/> */}
+{/* <SitemapGenerator sitemap={sitemap} /> */}
+{/* <SitemapComponent/> */}
 <BrowserRouter>
       
       <Routes>
@@ -37,6 +45,7 @@ function App() {
         
         <Route path='/sell' element={<SellCar/>} />
         <Route path='/cardetail' element={<CarDetail/>} />
+        <Route path='/search' element={<Search/>} />
   
     
       </Routes>
