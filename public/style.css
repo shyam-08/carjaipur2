@@ -1,0 +1,221 @@
+/* .aboutUS-bgimage {
+    /* background: url(""); */
+   
+/* }  */
+
+.Section-2 {
+    font-family: Barlow, arial;
+    font-size: medium;
+    color: #000;
+}
+
+.p {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* .Why-us {
+    background: url("img/Why.jpg");
+} */
+
+.item-1 {
+    background-color: #000;
+}
+
+/* .icon.checkpoint {
+    background: url("img/151checkpoints-icon.png");
+} */
+
+.sale.litxtt {
+    font: 24px;
+}
+.footer-links{
+    color: white;
+    
+}
+.li{
+    color: grey;
+}
+.section-3Home{
+    background-color: #080E0E;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    
+}
+.Home-basic{
+    padding: 30px;
+}
+.section-1Home{
+    /* background-image: "src\component\img\pexels-geometric-photography-13324313.jpg"; */
+    /* background: url("img\pexels-geometric-photography-13324313.jpg"); */
+    color: whitesmoke;
+}
+/* @media (min-width: 576px) { 
+.home-img{
+    height: 300px;
+    width: 200;
+}
+     } */
+     @media only screen and (max-width: 600px) {
+    #headerimg{
+height: '100px';
+width:'200px'
+    }
+
+
+     }
+.section-2Home{
+    padding: 100px;
+}
+/* tam squad styling  */
+.Section-2Squad{
+    padding: 70px;
+}
+
+.Section-4Squad{
+background-color:whitesmoke;
+padding: 20px;
+ text-Align: center;
+}
+.Section-5Squad-Icon{
+    border:1px solid black ;
+    border-Radius:10px;
+     padding:20px;
+      height:70px; 
+   width:70px;
+   background-color:whitesmoke;
+}
+.how-Squad-img{
+    border:1px solid black ;
+     border-Radius:20px;
+      padding:10px;
+       height:200px; 
+    width:300px;
+    background-color:  white;
+    margin: 10px;
+    /* border: 1px solid blac/k; */
+/* border-radius: 10px; */
+}
+.Section-6Squad{
+    text-Align: center; 
+    padding: 50px;
+    width: 95%;
+}
+.Img-6Squad{
+    height: 300px;
+    width: 400px;
+     padding-Right: 10px ;
+
+}
+
+/* career page */
+.Section-3Career{
+    padding: 50px;
+}
+.Career-Img{
+    height: 300px;
+    width: 400px;
+    margin: 20px;
+}
+.Section-4Career{
+    background-color: whitesmoke;
+}
+.Section-5Career{
+    padding: 30px;
+}
+.Vacate-Career{
+    border: 1px solid black;
+    border-radius: 10px;
+    
+    
+}
+Section-5p{
+    background-color: whitesmoke;
+}
+
+/* sale car page */
+.SaleCar1{
+padding: 20px;
+}
+
+.Sec1-sale{
+    /* background: url(); */
+background-image: "src\component\img\sellyourcar-banner-imgbg.jpg";
+/* position: absolute; */
+
+}
+.Section-2Sale{
+    padding: 80px;
+    text-align: center;
+
+}
+.Sec2-Li-Img{
+    padding: 5px;
+}
+.Section-3Sale{
+    padding: 40px;
+    text-align: center;
+}
+.logo{
+    height: 140px;
+    width: 140px;
+    border: 1px solid black;
+    padding: 30px;
+}
+.a-3Sale{
+    color: red;
+    text-align: center;
+}
+.Section-4Sale{
+    padding: 40px;
+    text-align: center;
+}
+.Section-5Sale{
+    padding: 50px;
+    background-color:  #080E0E;
+    text-align: center;
+    content: justify;
+    
+}
+.Section-6Sale{
+    padding: 20px;
+    background-color: whitesmoke;
+    text-align: center;
+}
+.Section-6Sale-Img{
+    border: 1px solid black;
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.Mandate-Check-Sale{
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+/* insurance page  */
+.head-text {
+    position: relative;
+ }
+.text-on-image {
+    position: absolute;
+    /* right: 90%; */
+    left: 10%;
+    bottom: 10%;
+    color: whitesmoke;
+  }
+.Section-3Insurance{
+    background-color: whitesmoke;
+    padding: 20px;
+    text-align: center;
+}
+.Section-4Insurance{
+    padding: 40px;
+    text-align: center;
+    /* margin:auto; */
+}
+.Sec4-Ins-img{
+    padding: 20px;
+}
