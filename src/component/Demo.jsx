@@ -427,7 +427,7 @@ const Demo = () => {
                 >
                   {/* if(sold==true){ */}
                  
-                <ColorBadge />
+                {/* <ColorBadge /> */}
 
                   {/* } */}
                   {/* else{

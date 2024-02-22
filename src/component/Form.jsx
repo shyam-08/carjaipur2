@@ -1,36 +1,54 @@
 // components/CarForm.js
 
 import { useState } from 'react';
+import { initializeApp } from 'firebase/app';
+// import {initializeApp } from 'firebase/app'
+import { getFirestore, collection, getDocs , doc, setDoc } from "firebase/firestore";
 
 export default function Form() {
-  // const [formData, setFormData] = useState({
-  //   name: '',
-  //   number: '',
-  //   email: '',
-  //   location: '',
-  //   owner: '',
-  //   color: '',
-  //   registration: '',
-  //   isAccidental: false,
-  //   insurance: '',
-  //   carNumber: '',
-  // });
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    number:"",
+    owner:"",
+    color:"",
+    registration:"",
+    insurance:"",
+    carnumber:"",
+  });
 
-  // const handleChange = (e) => {
-  //   const value = e.target.type === 'checkbox' ? e.target.checked : e.target.value;
-  //   setFormData({ ...formData, [e.target.name]: value });
-  // };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
 
-  // const handleSubmit = (e) => {
-  //   e.preventDefault();
-
-    // Add logic here to handle the form submission
-  //   console.log(formData);
-  // };
-
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // e.target.reset();  
+    const database = getFirestore();
+    const collectionRef = collection(database, "sell data");
+    const docRef = doc(collectionRef);
+    setDoc(docRef, {
+        name: formData.name,
+        email: formData.email,
+        number:formData.number,
+        owner:formData.owner,
+        color:formData.color,
+        registration:formData.registration,
+        insurance:formData.insurance,
+        carnumber:formData.carnumber
+      }).then(() => {
+        alert("Sent Successfully")
+        // console.log("Document successfully written!");
+      }).catch((error) => {
+        console.error("Error writing document: ", error);
+        alert("Error, Please check")
+      });
+         
+    };
   return (
-    <form action='mailto:sssharma91@gmail.com' method='post'
-    //  onSubmit={handleSubmit}
+    <form 
+     onSubmit={handleSubmit}
       className="max-w-md mx-auto bg-white p-8 mt-10 rounded-md shadow-md">
       <div className="mb-2">
         <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2">Name:</label>
@@ -38,8 +56,8 @@ export default function Form() {
           type="text"
           id="name"
           name="name"
-          // value={formData.name}
-          // onChange={handleChange}
+          value={formData.name}
+          onChange={handleChange}
           className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
@@ -51,8 +69,8 @@ export default function Form() {
           type="tel"
           id="number"
           name="number"
-          // value={formData.number}
-          // onChange={handleChange}
+          value={formData.number}
+          onChange={handleChange}
           className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
@@ -64,8 +82,8 @@ export default function Form() {
           type="email"
           id="email"
           name="email"
-          // value={formData.email}
-          // onChange={handleChange}
+          value={formData.email}
+          onChange={handleChange}
           className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
@@ -77,8 +95,8 @@ export default function Form() {
           type="text"
           id="location"
           name="location"
-          // value={formData.location}
-          // onChange={handleChange}
+          value={formData.location}
+          onChange={handleChange}
           className="w-full p-2 border rounded-md bg-gray-50" 
           required
         />
@@ -90,8 +108,8 @@ export default function Form() {
           type="text"
           id="owner"
           name="owner"
-          // value={formData.owner}
-          // onChange={handleChange}
+          value={formData.owner}
+          onChange={handleChange}
           className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
@@ -103,8 +121,8 @@ export default function Form() {
           type="text"
           id="color"
           name="color"
-          // value={formData.color}
-          // onChange={handleChange}
+          value={formData.color}
+          onChange={handleChange}
           className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
@@ -116,8 +134,8 @@ export default function Form() {
           type="text"
           id="registration"
           name="registration"
-          // value={formData.registration}
-          // onChange={handleChange}
+          value={formData.registration}
+          onChange={handleChange}
           className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
@@ -129,8 +147,8 @@ export default function Form() {
             type="checkbox"
             id="isAccidental"
             name="isAccidental"
-            // checked={formData.isAccidental}
-            // onChange={handleChange}
+            checked={formData.isAccidental}
+            onChange={handleChange}
             className="mr-2"
           />
           Is Accidental
@@ -143,8 +161,8 @@ export default function Form() {
           type="text"
           id="insurance"
           name="insurance"
-          // value={formData.insurance}
-          // onChange={handleChange}
+          value={formData.insurance}
+          onChange={handleChange}
           className="w-full p-2 border rounded-md bg-gray-50"
           required
         />
@@ -156,8 +174,8 @@ export default function Form() {
           type="text"
           id="carNumber"
           name="carNumber"
-          // value={formData.carNumber}
-          // onChange={handleChange}
+          value={formData.carNumber}
+          onChange={handleChange}
           className="w-full p-2 border rounded-md bg-gray-50"
           required
         />

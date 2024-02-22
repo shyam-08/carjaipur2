@@ -15,6 +15,9 @@ import {BrowserRouter,
 import CarDetail from './pages/CarDetail'
 import SearchBox from './component/SearchBox'
 import Search from './pages/Search'
+import Firebase from './config/Firebase';
+import { initializeApp } from 'firebase/app';
+
 // import SitemapComponent from './sitemap-builder'
 // import { SitemapGenerator } from "react-router-sitemap";
 // import routes from './routes'
