@@ -14,7 +14,7 @@ const ReadMore = ({ text, maxLength }) => {
       ) : (
         <p>{text}</p>
       )}
-      <button onClick={toggleTruncate}>
+      <button onClick={toggleTruncate} className='bg-gray-50 border-black' >
         {isTruncated ? 'Read More' : 'Read Less'}
       </button>
     </div>
